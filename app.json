@@ -2,6 +2,7 @@
   "expo": {
     "name": "Global Zenith Bank",
     "slug": "global-zenith-bank",
+    "projectId": "7c82301c-3e91-4e78-9993-45582f3c7e78",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
