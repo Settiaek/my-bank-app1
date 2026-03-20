@@ -1,15 +1,12 @@
 {
   "expo": {
     "name": "Global Zenith Bank",
-    "slug": "cash-clone",
-    "extra": {
-      "eas": {
-        "projectId": "d755fe57-234c-4f54-ba2c-34989c08371e"
-      }
-    },
+    "slug": "cash-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "scheme": "mobile",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
