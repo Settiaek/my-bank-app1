@@ -11,7 +11,13 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import Colors from "@/constants/colors";
+// تأكد أن هذا المسار صحيح في مشروعك، إذا حدث خطأ استبدل Colors.gold بـ 'gold' مباشرة
+const Colors = {
+  black: "#000000",
+  white: "#FFFFFF",
+  gold: "#D4AF37",
+  gray: "#8E8E93",
+};
 
 export default function SplashScreen() {
   const insets = useSafeAreaInsets();
@@ -48,8 +54,9 @@ export default function SplashScreen() {
     ]).start(() => {
       startDots();
       setTimeout(() => {
+        // إذا كان مجلد dashboard موجوداً سيتم الانتقال له بنجاح
         router.replace("/dashboard");
-      }, 2200);
+      }, 2500);
     });
   }, []);
 
@@ -82,10 +89,8 @@ export default function SplashScreen() {
       style={[
         styles.container,
         {
-          paddingTop:
-            Platform.OS === "web" ? 67 : insets.top,
-          paddingBottom:
-            Platform.OS === "web" ? 34 : insets.bottom,
+          paddingTop: Platform.OS === "web" ? 67 : insets.top,
+          paddingBottom: Platform.OS === "web" ? 34 : insets.bottom,
         },
       ]}
     >
@@ -150,14 +155,14 @@ const styles = StyleSheet.create({
   bankName: {
     color: Colors.white,
     fontSize: 22,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "bold", // تم استبدال الخط المفقود بسمك عريض قياسي
     letterSpacing: 3,
     textAlign: "center",
   },
   tagline: {
     color: Colors.gold,
     fontSize: 12,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "600",
     letterSpacing: 2,
     textAlign: "center",
     marginTop: 4,
@@ -176,7 +181,7 @@ const styles = StyleSheet.create({
   footer: {
     color: Colors.gray,
     fontSize: 11,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400",
     letterSpacing: 0.5,
     textAlign: "center",
     paddingBottom: 16,
