@@ -9,17 +9,20 @@
     },
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "mobile",
-    "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/images/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0B0E11"
-    },
-    "android": {
-      "backgroundColor": "#0B0E11",
-      "package": "com.globalzenithbank.app"
+    ""icon": "./assets/icon.png",
+"splash": {
+  "image": "./assets/splash.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#0B0E11"
+},
+"android": {
+  "adaptiveIcon": {
+    "foregroundImage": "./assets/icon.png",
+    "backgroundColor": "#0B0E11"
+  },
+  "package": "com.globalzenithbank.app"
+}
+
     },
     "plugins": [
       "expo-router"
