@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Global Zenith",
-    "slug": "global-zenith-app",
+    "name": "Zenith Global Mobile",
+    "slug": "zenith-final-build",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#0B0E11"
       },
-      "package": "com.global.zenith.mobile"
+      "package": "com.zenith.global.final"
     },
     "plugins": [
       "expo-router"
