@@ -7,6 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "zenith-global",
     "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
@@ -14,7 +15,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "abb2638d-f957-4382-9fe6-ca974daa2679"
+        "projectId": "abb2638d-f957-4382-9fe1-35105220790a"
       }
     },
     "android": {
