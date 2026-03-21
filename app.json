@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Global Zenith Bank",
+    "name": "Cash app",
     "slug": "cash-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#0B0E11"
       },
-      "package": "com.global.zenith.banking"
+      "package": "com.globalzenithbank.app"
     },
     "plugins": [
       "expo-router"
