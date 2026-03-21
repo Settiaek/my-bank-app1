@@ -1,4 +1,4 @@
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons"; // تصحيح حرف i الصغير هنا
 import { router } from "expo-router";
 import React, { useEffect, useRef } from "react";
 import {
@@ -11,7 +11,6 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-// تأكد أن هذا المسار صحيح في مشروعك، إذا حدث خطأ استبدل Colors.gold بـ 'gold' مباشرة
 const Colors = {
   black: "#000000",
   white: "#FFFFFF",
@@ -54,14 +53,14 @@ export default function SplashScreen() {
     ]).start(() => {
       startDots();
       setTimeout(() => {
-        // إذا كان مجلد dashboard موجوداً سيتم الانتقال له بنجاح
+        // تأكد من وجود مجلد dashboard في مشروعك
         router.replace("/dashboard");
       }, 2500);
     });
   }, []);
 
   const startDots = () => {
-    const dot = (anim: Animated.Value, delay: number) =>
+    const dot = (anim, delay) => // إزالة تعريف الأنواع (Types) لضمان عملها كملف .js أو .tsx
       Animated.loop(
         Animated.sequence([
           Animated.delay(delay),
@@ -155,7 +154,7 @@ const styles = StyleSheet.create({
   bankName: {
     color: Colors.white,
     fontSize: 22,
-    fontWeight: "bold", // تم استبدال الخط المفقود بسمك عريض قياسي
+    fontWeight: "bold",
     letterSpacing: 3,
     textAlign: "center",
   },
